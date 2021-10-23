@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Incio do cabeçalho-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/itau-pesonalite.png" type="image/x-icon">
+    <title>Cadastro Cliente Itaú</title>
+</head>
+<!--Fim do cabeçalho-->
+
+<body>
+    <!--Inicio do Formulário de Cadastro-->
+    <main>
+        <a href="https://www.itau.com.br/"><img class="logos-cab" src="img/itau-pesonalite.png"> </a>
+        <h2>Cadastro Cliente</h2>
+
+        <form class="formulario-cad" name="validaForm" onsubmit=" return validarForm()" method="post" netlify>
+            <div class="central-form">
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required><br>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" for="cpf" id="cpf" name="cpf" placeholder="Digite seu número de CPF"
+                        onblur="validarCPF(this)" maxlength="11" required><br>
+                    <label for="rg"> RG: </label>
+                    <input type="text" id="rg" name="rg" placeholder=" Digite seu número de RG" maxlength="9"><br>
+                    <label>Sexo:</label>
+                    <select nome="sexo" id="sexo">
+                        <option option value="vazio"></option>
+                        <option value="feminino"> Feminino </option>
+                        <option value="masculino"> Masculino </option>
+                    </select><br>
+                    <label for="endereco"> Endereço: </label>
+                    <input type="text" id="endereco" placeholder="Digite seu endereço" required><br>
+                    <label for="numero"> Número: </label>
+                    <input type="text" id="numero" placeholder="Digite seu número" required><br>
+                    <label for="bairro">Bairro: </label>
+                    <input type="text" id="bairro" placeholder="Digite seu bairro"><br>
+                    <label for="cidade">Cidade: </label>
+                    <input type="text" id="cidade" placeholder="Digite a sua cidade"><br>
+                    <label for="estado">Estado: </label>
+                    <input type="text" id="estado" placeholder="Digite seu estado" maxlength="2"><br>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" placeholder=" 00000-000" maxlength="8"><br>
+                    <label for="telefonefixo">Telefone Fixo: </label>
+                    <input type="text" id="telefonefixo" placeholder=" (xx) xxxx-xxxx" maxlength="10"><br>
+                    <label for="telefonecelular">Telefone Celular:</label>
+                    <input type="text" id="telefonecelular" placeholder=" (xx) xxxxx-xxxx" maxlength="11" required><br>
+                </div>
+            </div>
+
+            <input class="botao" type="submit" value="Cadastrar">
+            <input class="botao" type="reset" value="Limpar">
+        </form>
+    </main>
+    <!--Final do Formulário-->
+
+    <!--Rodapé página-->
+    <footer>
+        <p>&reg; TODOS OS DIREITOS RESERVADOS 2021</p>
+        <div class="contatoRodape">Contato:<br>
+            <p>Carlos Silva</p>
+            <a class="email" href="mailto:carloos19@gmail.com" target="_top">
+                <img src="img/logoemail-nv.png" width="40px" height="40px" alt="Envelope"></a>
+            <a href="https://github.com/carlos-silva007/formulario-itau.git">
+                <img src="img/logo-git2.png" width="40px" height="40px"></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

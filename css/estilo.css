@@ -1,0 +1,138 @@
+/*estilo do corpo do site*/
+body 
+{
+  background-image: url("../img/fundo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+/* logotipos do cabeçalho */
+.logos-cab
+{
+  display: inline-block;
+  width: 11%;
+}
+    
+/*deixar padrao de margens do site*/    
+*{
+   margin:  0;
+   padding: 0;
+}
+
+/*tamanho da altura do site*/
+html, body 
+{
+ height: 100%;
+}
+
+/*estilo do texto do cadastro*/
+h2
+{
+  color: #001439;
+  text-shadow: rgb(255, 255, 255) 2px 2px 4px;
+  text-align: center;
+  font-size: 25px;
+  padding: 8px;
+  margin-right: auto;
+}
+
+/*estilo e configuração do formulario*/
+.formulario-cad 
+{
+  background-image: linear-gradient(90deg, #eaa734, #002049);
+  text-shadow: #555454 1px 1px 2px;
+  color: #001439;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: rgb(10, 10, 10) 5px 5px 20px;
+  letter-spacing: inherit;
+  line-height: 30px;
+  text-align: justify;
+  width: 700px;
+}
+  
+.central-form 
+{
+  display: grid;
+  justify-content: center;
+}
+
+/*estilo do texto do formulario*/
+main
+{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+label 
+{
+  width: 150px;
+  display: inline-block;
+}
+label, input 
+{
+  margin-bottom: 15px;
+}
+input, select 
+{
+  font-size: 17px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  padding: 5px;
+}
+
+/*estilo do botao formulario*/
+.botao, button {
+  letter-spacing: 3px;
+  margin: 20px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: #002049 1px 1px 6px;
+  border: rgb(255, 249, 249) 1px solid;
+  color:#002049;
+  text-shadow: rgb(146, 146, 146) 1px 1px 2px;
+  background-color: #ffffff;
+}
+
+/*efeito botao do formulario*/
+input:hover, input:focus 
+{
+  background-color: #acacac;
+  color: rgb(0, 0, 0);
+  transition: 1s;
+}
+
+/*envio cadastro com sucesso*/
+.envio 
+{
+  display: table-cell;
+  text-align: center;
+  width: 20%;
+}
+
+/*estilo do rodape*/
+footer 
+{
+   background-color: #002049;
+   text-align: center;
+   color: #dddddd;
+   font-size: 15px;
+   font-style: italic;
+   width: 98%;
+   bottom: 0;
+   left: 0;
+   flex-shrink: 0;
+   flex-direction: row;
+   position: relative;
+   margin-top: 20px;
+   padding: 20px;
+}
+
