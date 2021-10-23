@@ -24,10 +24,13 @@ HTML
 
 JavaScript
 
+Confira meu site pronto:https://carlos-silvaitau.netlify.app/
+
+
 ## Referências:
 
 Curso em video
-
 W3schools.com
 CFBCursos
+Canal Dev Aprender
 
